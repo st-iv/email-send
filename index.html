@@ -12,6 +12,7 @@
   <form id="form">
     <input type="text" name="name" required="required"/>
     <input type="text" name="phone" required="required"/>
+    <textarea name="msg" cols="30" rows="10"></textarea>
     <input type="submit" value="Заказать звонок"/>
 </form>
 <script type="text/javascript">
@@ -24,7 +25,7 @@ $(document).ready(function(){
             data: form_data,
             success: function() {
                    //код в этом блоке выполняется при успешной отправке сообщения
-                   alert("Ваше сообщение отпрвлено!");
+                   alert("Ваше сообщение отправлено!");
             }  
                    
         });
